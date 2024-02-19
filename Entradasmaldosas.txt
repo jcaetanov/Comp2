@@ -1,0 +1,9 @@
+Parte Escrita do Exercicio 7 CCM - T28
+Tempos Anômalos
+João victor Oliveira Caetano 10739674
+
+Funcoes do tipo hash operam de tal forma que ao ler o arquivo de imput, associam cada palavra a uma posição de uma Simble table por exemplo, em seu respectivo M calculado pela função Hash. Assim relacionando os pares (int e string).Visto isto, entradas maldosas podem prejudicar a eficiência do seu programa pois, como diferentes strings podem ocupar a mesma posição M[i] de sua ST porque a função Hash pode retornar o mesmo inteiro quando usadas de argumento.
+Ter acumulo de entropia neste sistema é prejudicial ao seu algoritimo, pois aumentam suas colições nesta distribuição de probabilidade de uma String ocupar certa posição assim uma dada M[i] teria strings demais associadas a ela dificultando sua busca, aumetando o numero de comparações. 
+Alguns codigos operam de tal forma que procuram "casas" desocupadas ao inves de fazerem suas ramificações, e assim, pela logica computacional pode fazer o processo de recizing, multiplicando ou dividindo o seu M por 2 o que às vezes prejudica seu código com estas entradas "Maldosas".
+Nas arvores binarias, dependendo da disposicao das suas palavras e seus nós escolhidos, temos uma certa diferença no tempo de execução devido ao excesso de comparacoes feitas devido sua distribuição. Temos uma coisa parecida para o exemplo de funcao Hash
+Um exemplo de entradas maldosas seria uma permutacao com simbolos parecidos ou repetidos. temos tambem o caso de simbolos com caracteres especiais como AáÃá ãâAâ. Este exemplo é válido para árvores Rubro-Negras.
